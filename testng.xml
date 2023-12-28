@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MavenSuite">
+	<test name="chromeTest1">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      	<class name="Itustra.MavenProject1.AppTest">
+      	  	<methods>
+      	  	    <parameter name="userNameData" value="admin"/>
+		      	<parameter name="passwordData" value="password"/>
+		      	
+
+		      	<include name="DoTest"/>
+		      	<include name="LoginUser"/>
+	      	</methods>
+      </class>
+    </classes>
+  </test>
+
+	<test name="FirefoxTest">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      	<class name="Itustra.MavenProject1.AppTest">
+      	  	<methods>
+      	  	    <parameter name="userNameData" value="admin"/>
+		      	<parameter name="passwordData" value="password"/>
+		      	
+
+		      	<include name="DoTest"/>
+		      	<include name="LoginUser"/>
+	      	</methods>
+      </class>
+    </classes>
+  </test>
+
+  
+</suite> <!-- Suite -->
