@@ -47,7 +47,7 @@ public class AppTest
 		Reporter.log("Login Button Clicked");
 		
 		Reporter.log("Locating user Name TextBox....");
-		assertNotEquals("", userName);
+		assertEquals("", userName);
 		driver.findElement(By.id("UserName")).sendKeys(userName);
 		
 		Reporter.log("UserName inserted in User text Box...");
